@@ -1,0 +1,33 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	width: 100%;
+	height: 100%;
+}
+body{
+	width: 100%;
+	height: 100%;
+}
+#contenedor_oculto{
+	display: none;
+}
+#contenedor{
+	width: 100%;
+	height: 100%;
+}
+header{
+	width: 100%;
+	height: 300px;
+}
+#menu img{
+	width: 300px;
+}
+#menu img#bars_menu{
+	width: 40px;
+}
+
+#menu_oculto{
+	display: none;
+}

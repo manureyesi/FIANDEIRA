@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css?family=Encode+Sans+Expanded');
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Encode Sans Expanded', sans-serif;
+}
+html{
+	width: 100%;
+	height: 100%;
+}
+body{
+	width: 100%;
+	height: 100%;
+}
+
+/* Menu Index */
+#menu{
+	background: rgba(0,0,0,0.5);
+	width: 100%;
+	position: fixed;
+	z-index: 100;
+
+}
+
+#menu img#bars_menu{
+	float: right;
+	margin: 20px 20px 0 0;
+}
+img#bars_menu:hover{
+	-webkit-transform: rotateX(27deg);
+	transform: rotateX(27deg);
+	-webkit-animation: one 2s infinite;
+	animation: one 2s infinite;
+	-webkit-animation-direction: alternate;
+	animation-direction: alternate;
+}
+
+/****************** Menu En otra página **************/
+/* Menu oculto */
+#menu_oculto{
+	display: none;
+}
+/* Ver menu */
+#ver_menu{
+	background-color: white;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-direction: column;
+	height: 100%;
+}
+#ver_menu img{
+	width: 500px;
+}
+#ver_menu a{
+	text-decoration: none;
+	color: purple;
+}
+#ver_menu a:hover{
+	color: grey;
+}
+#ver_menu h2{
+	margin-top: 30px;
+}
+img#cerrar_menu{
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	width: 30px;
+}
+
+img#cerrar_menu:hover{
+	-webkit-transform: rotateX(40deg);
+	transform: rotateX(40deg);
+	-webkit-animation: one 2s infinite;
+	animation: one 2s infinite;
+	-webkit-animation-direction: alternate;
+	animation-direction: alternate;
+}
+
+@media screen and (max-width: 600px){
+
+	#ver_menu img{
+		width: 80%;
+	}
+	img#cerrar_menu{
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		width: 30px;
+	}
+	#menu img.logo{
+		width: 70%;
+	}
+
+}
+
+/************ banner *****************/
+
+
+div#info_tenda{
+	padding: 20px;
+	text-align: center;
+	z-index: 50;
+	position: relative;
+	display: block;
+	width: 600px;
+	margin: auto auto;
+	top: 40%;
+	background: rgba(255,255,255,0.5);
+}
+
+div#info_tenda h2{
+	font-size: 30px;
+	padding-bottom: 30px;
+	color: #620062;
+	font-weight: bold;
+}
+
+div#info_tenda span{
+	margin: 0 auto;
+	margin-top: 30px;
+	background-color: #620062;
+	border-radius: 5px;
+	display: block;
+	width: 200px;
+	height: 50px;
+}
+div#info_tenda span a{
+	padding-top: 15px;
+	color: white;
+	text-decoration: none;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+/* bajar */
+
+header img.bajar{
+	display: block;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	rotation: 90deg;
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+	z-index: 50;
+	position: absolute;
+	margin: 0 auto;
+	top: 80%;
+	right: 40%;
+	left: 40%;
+}
+
+@media screen and (max-width: 700px){
+
+	div#info_tenda{
+		width: 90%;
+		top: 20%;
+	}
+
+}
