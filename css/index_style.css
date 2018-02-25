@@ -19,7 +19,6 @@ body{
 }
 header{
 	background-image: url(../img/fondos/fondo_index.jpg);
-	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	width: 100%;
 	height: 100%;
@@ -34,3 +33,15 @@ header{
 #menu_oculto{
 	display: none;
 }
+
+@media screen and (max-width: 1280px){
+	header{
+		background-position: center;
+	}
+}
+@media screen and (min-width: 1280px){
+	header{
+		background-size: 100% 100%;
+	}
+}
+
