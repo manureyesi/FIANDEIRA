@@ -1,15 +1,3 @@
-*{
-	margin: 0;
-	padding: 0;
-}
-html{
-	width: 100%;
-	height: 100%;
-}
-body{
-	width: 100%;
-	height: 100%;
-}
 #contenedor_oculto{
 	display: none;
 }
@@ -17,22 +5,58 @@ body{
 	width: 100%;
 	height: 100%;
 }
+main{
+	width: 80%;
+	padding: 10px 10% 0 10%;
+	display: grid;
+	background-color: white;
+}
 header{
 	background-image: url(../img/fondos/fondo_index.jpg);
 	background-repeat: no-repeat;
 	width: 100%;
 	height: 100%;
 }
+
 #menu img{
 	width: 300px;
 }
 #menu img#bars_menu{
 	width: 40px;
 }
-
-#menu_oculto{
-	display: none;
+/* Div Ejemplos */
+div.ejemplos{
+	width: 30%;
+	position: relative;
 }
+div.ejemplos div.img img{
+	width: 100%;
+}
+div.ejemplos div.texto{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+div.ejemplos div.texto{
+	color: rgba(0,0,0,0);
+}
+div.ejemplos div.texto:hover{
+	background: rgba(0,0,0,0.5);
+	color: red;
+}
+
+@media screen and (max-width: 600px){
+
+	main{
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	div.ejemplos{
+		width: 100%;
+	}
+}
+
 
 @media screen and (max-width: 1280px){
 	header{

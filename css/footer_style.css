@@ -1,5 +1,6 @@
 /* FOOTER */
 footer{
+	min-width: 400px;
 	padding: 0 5% 0 5%;
 	width: 90%;
 	display: grid;
