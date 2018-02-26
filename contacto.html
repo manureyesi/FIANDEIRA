@@ -19,7 +19,7 @@
 		<link rel="icon" type="image/png" href="img/favicon/favicon.png">
 
 		<!-- CSS -->
-		<link rel="stylesheet" type="text/css" href="css/menu_resto_style.css">
+		<link rel="stylesheet" type="text/css" href="css/contacto_style.css">
 		<link rel="stylesheet" type="text/css" href="css/menu_style.css">
 		<link rel="stylesheet" type="text/css" href="css/footer_style.css">
 
@@ -60,7 +60,31 @@
 
 			<main id="main">
 
+				<h1>Horario de atencion:</h1>
+				<p class="negrita">De Lunes a Viernes:</p>
+				<p>Mañanas de 10:30 a 13:30</p>
+				<p>Tardes de 17:00 a 20:30</p>
+				<p class="negrita">Sabados:</p>
+				<p>Mañanas de 10:30 a 14:00</p>
+				
+				<a href="tel:986573571">986573571</a>
 
+				<form method="POST">
+					<label for="name">Nombre:</label>
+					<input type="text" name="name" id="name" placeholder="Nombre" required="required">
+
+					<label for="mail">Correo:</label>
+					<input type="email" name="mail" id="mail" placeholder="Correo" required="required">
+
+					<label for="telefono">Telefono:</label>
+					<input type="tel" name="telefono" id="telefono" pattern="[0-9]{9}" placeholder="Telefono">
+
+					<label for="pregunta">Pregunta:</label>
+					<textarea id="pregunta" maxlength="250" minlength="5" placeholder="Texto" required="required"></textarea>
+
+					<input type="submit" name="enviar" value="Enviar">
+
+				</form>
 
 			</main>
 
