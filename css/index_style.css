@@ -5,67 +5,80 @@
 	width: 100%;
 	height: 100%;
 }
+div#slider{
+	background-image: url(../img/fondos/fondo_index_hilos.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 500px;
+	width: 100%;
+}
+
 main{
-	width: 80%;
-	padding: 10px 10% 0 10%;
+	width: 100%;
 	display: grid;
 	background-color: white;
 }
-header{
-	background-image: url(../img/fondos/fondo_index.jpg);
-	background-repeat: no-repeat;
-	width: 100%;
-	height: 100%;
-}
 
-#menu img{
-	width: 300px;
-}
-#menu img#bars_menu{
-	width: 40px;
-}
-/* Div Ejemplos */
-div.ejemplos{
-	width: 30%;
+/************ banner *****************/
+
+div#info_tenda{
+	padding: 20px;
+	text-align: center;
+	z-index: 50;
 	position: relative;
+	display: block;
+	width: 600px;
+	margin: auto auto;
+	top: 40%;
+	background: rgba(255,255,255,0.5);
 }
-div.ejemplos div.img img{
-	width: 100%;
+
+div#info_tenda h2{
+	font-size: 30px;
+	padding-bottom: 30px;
+	color: #620062;
+	font-weight: bold;
 }
-div.ejemplos div.texto{
+
+div#info_tenda span{
+	margin: 0 auto;
+	margin-top: 30px;
+	background-color: #620062;
+	border-radius: 5px;
+	display: block;
+	width: 200px;
+	height: 50px;
+}
+div#info_tenda span a{
+	padding-top: 15px;
+	color: white;
+	text-decoration: none;
+	display: block;
 	width: 100%;
 	height: 100%;
-	position: absolute;
-}
-div.ejemplos div.texto{
-	color: rgba(0,0,0,0);
-}
-div.ejemplos div.texto:hover{
-	background: rgba(0,0,0,0.5);
-	color: red;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 700px){
 
-	main{
-		display: flex;
-		justify-content: center;
-		flex-wrap: wrap;
+	div#info_tenda{
+		width: 80%;
+		top: 20%;
 	}
-	div.ejemplos{
-		width: 100%;
-	}
+
 }
 
-
-@media screen and (max-width: 1280px){
-	header{
-		background-position: center;
-	}
+/* Muestra */
+div#muestra{
+	margin-top: 20px;
+	width: 80%;
+	margin: 0 auto;
 }
-@media screen and (min-width: 1280px){
-	header{
-		background-size: 100% 100%;
-	}
+div.ejemplos{
+	width: 100%;
 }
-
+div.img{
+	width: 100%;
+}
+div.img img{
+	width: 100%;
+}
