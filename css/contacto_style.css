@@ -51,6 +51,7 @@ input[type=submit]{
     margin-top: 20px;
     margin-bottom: 30px;
 	border-radius: 5px;
+	font-weight: bold;
 }
 label{
 	font-size: 20px;
@@ -61,8 +62,9 @@ label{
 div#info a#tel:hover{
 	transition:all 3s;
 	transform: scale(1.2);
-	 background-color: #800080;
-	 border-radius: 5px;
+	background-color: #800080;
+	color: white;
+	border-radius: 5px;
 }
 form{
 	text-align: center;

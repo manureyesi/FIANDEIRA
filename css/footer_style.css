@@ -4,7 +4,7 @@ footer{
 	width: 90%;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 300px 80px;
+	grid-template-rows: 320px 80px;
 	background-color: #BDBDBD;
 }
 footer h2{
@@ -29,7 +29,10 @@ address#informacion img{
 	width: 15px;
 	padding-right: 5px;
 }
-
+address#informacion a img{
+	width: 30px;
+	padding: 10px;
+}
 div#estamos{
 	grid-column-start: 2;
 	grid-column-end: 3;

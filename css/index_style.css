@@ -37,7 +37,10 @@ div#info_tenda h2{
 	color: #620062;
 	font-weight: bold;
 }
-
+div#info_tenda p{
+	font-size: 25px;
+	color: #620062;
+}
 div#info_tenda span{
 	margin: 0 auto;
 	margin-top: 30px;
@@ -81,7 +84,7 @@ div.ejemplos img{
 /* Texto */
 div.ejemplos div.texto{
 	position: relative;
-	top: -86px;
+	top: -85px;
 	background-color: rgba(0,0,0,.5);
 	color: white;
 	padding: 10px 5px 10px 5px;
