@@ -1,0 +1,9 @@
+/* Ocultar Contenedor*/
+div#contenedor_oculto{
+	display: none;
+}
+main{
+	padding-top: 100px;
+	padding-right: 10%;
+	padding-left: 10%;
+}

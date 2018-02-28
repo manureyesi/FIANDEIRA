@@ -9,7 +9,7 @@
 div#slider{
 	background-image: url(../img/fondos/fondo_index_hilos.png);
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: left center;
 	height: 500px;
 	width: 100%;
 }
@@ -69,47 +69,22 @@ div#info_tenda span a{
 
 /* Muestra */
 div#muestra{
-	margin-top: 20px;
 	width: 80%;
-	margin: 0 auto;
+	margin: 30px auto;
 }
+/* Ejemplos */
 div.ejemplos{
 	width: 100%;
+	position: relative;
 }
 div.ejemplos img{
 	width: 100%;
 }
-
-.ejemplos {
-	width: 100px; 
-	height: 150px;
-	margin: 12px;
-	float: left;
+/* Texto */
+div.ejemplos div.texto{
 	position: relative;
-	overflow: hidden;
-	left: 10px; top: 10px;
-	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-}
-.ejemplos h1 {
-	font-weight: bold;
-	font-size: .9em;
-	margin: 0px 0px .1em 0px;
-}
-.ejemplos p {
-	font-size: .7em;
-	text-decoration: none;
-	margin: 0px 0px .1em 0px;
-}
-
-.texto{
-	padding: 4px;
-	width: 100px;
-	height: 142px;
-	background-color: rgba(255, 255, 255, .7);
-	color: rgba(F255, 255, 255, .7);
-	position: absolute;
-	cursor: pointer;
-	bottom: -119px;
-	left: 0px;
-	font-size: 1em;
+	top: -86px;
+	background-color: rgba(0,0,0,.5);
+	color: white;
+	padding: 10px 5px 10px 5px;
 }
