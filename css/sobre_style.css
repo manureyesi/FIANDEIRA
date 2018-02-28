@@ -41,6 +41,7 @@ main div.marcas h2{
 	background-color: rgba(0,0,0,.5);
 	height: 50px;
 }
+/* Video Audio */
 audio{
 	margin: 10px 0 30px 0;
 	width: 100%;
@@ -49,8 +50,13 @@ video{
 	margin: 10px 0 30px 0;
 	width: 100%;
 }
+section.marcas + section h2{
+	text-align: left;
+}
+section video{
+	border: 2px solid rgba(0,0,0,.5);
+}
 @media screen and (min-width: 750px){
-
 
 	main section{
 		position: relative;
@@ -68,7 +74,7 @@ video{
 	}
 	main section.marcas{
 		display: flex;
-		align-content: space-around;
+		justify-content: space-around;
 		flex-direction: row;
 		flex-wrap: wrap;
 		width: 100%;
@@ -83,11 +89,44 @@ video{
 		bottom: 0;
 		width: 100%;
 	}
-
+	section.marcas + section {
+		text-align: left;
+	}
 
 }
 @media screen and (min-width: 950px){
+
 	main section img#foto_sobrenos{
 		margin-bottom: 50px;
 	}
+
+}
+@media screen and (min-width: 1250px){
+
+	/* Flex de Marcas */
+	main section.marcas{
+		flex-wrap: no-wrap;
+	}
+	main .marcas div.marcas{
+		width: 22%;
+		display: block;
+		margin: 0 10px 20px 10px;
+	}
+
+	/* Audio e Video */
+	section#audio-video{
+		display: flex;
+		width: 100%;
+		justify-content: space-around;
+	}
+	div.audio{
+		width: 40%;
+	}
+	div.video{
+		width: 40%;
+	}
+	audio, video{
+		margin-top: 30px;
+	}
+
 }
