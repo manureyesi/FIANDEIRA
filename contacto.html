@@ -61,17 +61,30 @@
 
 
 				<form method="POST">
-					<label for="name">Nombre:</label><br>
-					<input type="text" name="name" id="name" placeholder="Nombre" required="required"><br>
 
-					<label for="mail">Correo:</label><br>
-					<input type="email" name="mail" id="mail" placeholder="Correo" required="required"><br>
+					<div id="coloca">
 
-					<label for="telefono">Telefono:</label><br>
-					<input type="tel" name="telefono" id="telefono" pattern="[0-9]{9}" placeholder="Telefono"><br>
+						<div id="coloca1">
 
-					<label for="pregunta">Pregunta:</label><br>
-					<textarea id="pregunta" maxlength="250" minlength="5" placeholder="Texto" required="required"></textarea><br>
+							<label for="name">Nombre (Obligatorio):</label>
+							<input type="text" name="name" id="name" placeholder="Nombre" required="required">
+
+							<label for="mail">Correo (Obligatorio):</label>
+							<input type="email" name="mail" id="mail" placeholder="Correo" required="required">
+
+							<label for="telefono">Telefono:</label>
+							<input type="tel" name="telefono" id="telefono" pattern="[0-9]{9}" placeholder="Telefono">
+
+						</div>
+
+						<div id="coloca2">
+
+							<label for="pregunta">Pregunta (Obligatorio):</label>
+							<textarea id="pregunta" maxlength="250" minlength="5" placeholder="Texto" required="required"></textarea>
+
+						</div>
+
+					</div>
 
 					<input type="submit" name="enviar" value="Enviar">
 
@@ -143,8 +156,8 @@
 
 			<h2><a href="index.html" title="Página Principal">Home</a></h2>
 			<h2><a href="sobre_nos.html" title="Página Sobre Nos">Sobre Nos</a></h2>
-			<h2><a href="contacto.html" title="Página Contactanos">Contactanos</a></h2>
-			<h2><a href="catalogo.html" title="Página Catalogo">Catalogo</a></h2>
+			<h2><a href="contacto.html" title="Página Contáctanos">Contactanos</a></h2>
+			<h2><a href="catalogo.html" title="Página Catálogo">Catalogo</a></h2>
 
 		</div>
 
