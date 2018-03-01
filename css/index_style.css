@@ -76,18 +76,32 @@ div#muestra{
 /* Ejemplos */
 div.ejemplos{
 	width: 100%;
-	position: relative;
+	height: auto;
 }
 div.ejemplos img{
 	width: 100%;
+	position: relative;
 }
+div.ejemplos{
+	position: relative;
+}
+div.ejemplos:nth-child(1){
+	top: 85px;
+}
+div.ejemplos:nth-child(2){
+	top: 85px;
+}
+/* div.ejemplos:nth-child(3){
+	top: 255px;
+} */
 /* Texto */
 div.ejemplos div.texto{
 	position: relative;
-	top: -85px;
+	bottom: 85px;
 	background-color: rgba(0,0,0,.5);
 	color: white;
-	padding: 10px 5px 10px 5px;
+	width: 100%;
+	/*padding: 10px 5px 10px 5px;*/
 }
 
 /* Muestras en grid */
@@ -99,10 +113,11 @@ div.ejemplos div.texto{
 		flex-wrap: wrap;
 		align-self: stretch;
 	}
-	div#muestra div.ejemplos{
-		width: 33%;
-		display: block;
-		height: auto;
+	div#muestra .flex{
+		display: flex;
+		flex-direction: column;
+		width: 50%;
+		align-self: stretch;
 	}
 
 }
