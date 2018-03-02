@@ -30,15 +30,17 @@ header{
 	width: 100%;
 	position: fixed;
 	z-index: 100;
-
+	height: 90px;
 }
-#menu img#bars_menu{
-	width: 40px;
+#menu #bars_menu{
 	float: right;
+	font-size: 40px;
+    cursor: pointer;
 	margin: 20px 20px 0 0;
 	margin-bottom: 10px;
+	color: white;
 }
-img#bars_menu:hover{
+#bars_menu:hover{
 	-webkit-transform: rotateX(27deg);
 	transform: rotateX(27deg);
 	-webkit-animation: one 2s infinite;
@@ -91,9 +93,12 @@ img.logo{
 }
 img#cerrar_menu{
 	position: absolute;
-	top: 20px;
-	right: 20px;
+	top: 0;
+	right: 0;
 	width: 30px;
+	cursor: pointer;
+	margin: 20px 20px 0 0;
+	margin-bottom: 10px;
 }
 
 img#cerrar_menu:hover{

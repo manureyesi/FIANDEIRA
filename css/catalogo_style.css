@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Encode+Sans+Expanded');
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Encode Sans Expanded', sans-serif;
+}
 /* Ocultar Contenedor*/
 main{
 	width: 80%;
@@ -7,8 +14,43 @@ main div.productos img{
 	margin-top: 150px;
 	width: 100%;
 }
+/******************* Img Menu *********************/
+header img.logo{
+	width: 300px;
+}
+/* Animacion Logo */
+img.logo{
+	animation-name: deslizaFoto;
+	animation-duration: 2s;
+}
 
-/* Menu */
+@keyframes deslizaFoto {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 300px;
+  }
+}
+/* animacion logo2 600px*/
+@media screen and (max-width: 600px){
+
+	header img.logo{
+		width: 200px;
+	}
+	@keyframes deslizaFoto {
+	  0% {
+	    width: 0%;
+	  }
+
+	  100% {
+	    width: 200px;
+	  }
+	}
+
+}
+/***************** Menu ***************************/
 header{
 	position: fixed;
 	width: 100%;
@@ -16,14 +58,15 @@ header{
     background: rgba(0,0,0,.5);
     color: black;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
 }
 #btn-menu{
     display: none;
 }
 header label{
-    font-size: 30px;
+    font-size: 40px;
+	color: white;
     cursor: pointer;
     display: none;
 }
@@ -35,11 +78,12 @@ header label{
 .menu ul ul{
     display: none;
 }
-.menu a{
+.menu a, .menu p{
     display: block;
     padding: 15px 20px;
     text-decoration: none;
     color: white;
+	cursor: pointer;
 }
 .menu a:hover{
     background: rgba(0,0,0,.3);
@@ -53,43 +97,50 @@ header label{
     display: block;
     position: fixed;
 }
-
-@media (max-width:900px){
-
-    header label{
-        display: block;
-    }
-    .menu{
-        position: fixed;
-        top: 90px;
-        left: 0;
-        width: 100%;
-        transform: translateX(-100%);
-        transition: all 0.3s;
-    }
-    .menu ul{
-        display: block;
-        background: #555;
-    }
-
-    .menu ul li:hover ul{
-        display: none;
-        position: static;
-    }
-
-    .menu a span{
-        position: fixed;
-        right: 5px;
-    }
-
-    #btn-menu:checked ~ .menu{
-        transform: translateX(0%);
-    }
-    .menu ul ul{
-        background: rgba(0,0,0,.4);
-    }
-    .menu ul ul a{
-        padding: 15px 40px;
-    }
-
+header label{
+    display: block;
 }
+.menu{
+	position: fixed;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    transform: translateX(-100%);
+    transition: all 0.3s;
+}
+.menu ul{
+    display: block;
+    background: #555;
+}
+
+.menu ul li:hover ul{
+    display: none;
+    position: static;
+}
+.menu p span{
+    position: fixed;
+    right: 5px;
+}
+
+#btn-menu:checked ~ .menu{
+    transform: translateX(0%);
+}
+.menu ul ul{
+    background: rgba(0,0,0,.4);
+}
+.menu ul ul a{
+    padding: 15px 40px;
+}
+
+@media screen and (min-width: 600px){
+	.menu{
+	    width: 50%;
+	}
+}
+@media screen and (min-width: 1700px){
+	.menu{
+	    width: 30%;
+	}
+}
+
+/* Catalogo */

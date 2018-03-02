@@ -47,7 +47,7 @@ function oculta(){
 
 	$(document).ready(function() {
 		setTimeout(function() {
-			$("#ver_menu").fadeOut(1);
+			$("#ver_menu").fadeOut(10);
 		},1);
 	});
 

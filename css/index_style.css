@@ -51,10 +51,10 @@ div#info_tenda span{
 	height: 50px;
 }
 div#info_tenda span:hover{
-	transform: scale(1.2,1.2) rotate(7deg);
-	-moz-transform: scale(1.2,1.2) rotate(7deg);
-	-webkit-transform: scale(1.2,1.2) rotate(7deg);
-	-o-transform: scale(1.2,1.2) rotate(7deg);
+	transform: scale(1.2,1.2) rotate(-5deg);
+	-moz-transform: scale(1.2,1.2) rotate(-5deg);
+	-webkit-transform: scale(1.2,1.2) rotate(-5deg);
+	-o-transform: scale(1.2,1.2) rotate(-5deg);
 	transition: all 1s;
 
 }
