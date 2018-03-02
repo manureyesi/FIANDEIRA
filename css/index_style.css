@@ -51,10 +51,10 @@ div#info_tenda span{
 	height: 50px;
 }
 div#info_tenda span:hover{
-	transform: scale(1.2,1.2) rotateY(-20deg);
-	-moz-transform: scale(1.2,1.2) rotateY(-20deg);
-	-webkit-transform: scale(1.2,1.2) rotateY(-20deg);
-	-o-transform: scale(1.2,1.2) rotateY(-20deg);
+	transform: scale(1.2,1.2) rotate(7deg);
+	-moz-transform: scale(1.2,1.2) rotate(7deg);
+	-webkit-transform: scale(1.2,1.2) rotate(7deg);
+	-o-transform: scale(1.2,1.2) rotate(7deg);
 	transition: all 1s;
 
 }
@@ -85,19 +85,35 @@ div#muestra{
 div.ejemplos{
 	width: 100%;
 	height: auto;
-	margin-bottom: 100px;
+	position: relative;
+	margin-bottom: 5px;
 }
 div.ejemplos img{
 	width: 100%;
 }
+div.ejemplos img:hover{
+    filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+}
+
 /* Texto */
 div.ejemplos div.texto{
 	background-color: rgba(0,0,0,.5);
 	color: white;
 	width: 100%;
-	padding: 10px 5px 10px 5px;
+	position: absolute;
+	bottom: 3px;
 }
-
+div.ejemplos div.texto h1{
+	margin-left: 10px;
+}
+div.ejemplos div.texto p{
+	margin-left: 10px;
+}
+/* Ocultar flex */
+div#muestra .flex:nth-child(3){
+	display: none;
+}
 /* Muestras en grid */
 @media screen and (min-width: 800px){
 
@@ -110,8 +126,23 @@ div.ejemplos div.texto{
 	div#muestra .flex{
 		display: flex;
 		flex-direction: column;
-		width: 50%;
+		width: 49%;
 		align-self: stretch;
 	}
+	div#muestra .flex:nth-child(1){
+		margin-right: 2%;
+	}
 
+}
+@media screen and (min-width: 1300px){
+
+	div#muestra .flex:nth-child(3){
+		display: block;
+	}
+	div#muestra .flex{
+		width: 32%;
+	}
+	div#muestra .flex:nth-child(1), div#muestra .flex:nth-child(2){
+		margin-right: 1%;
+	}
 }

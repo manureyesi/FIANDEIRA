@@ -14,14 +14,14 @@ function ir_menu(){
 
 	$(document).ready(function() {
 		setTimeout(function() {
-			$("#ver_menu").fadeIn(1500);
-		},1000);
+			$("#ver_menu").fadeIn(1000);
+		},100);
 	});
 
 	$(document).ready(function() {
 		setTimeout(function() {
-			$("#contenedor").fadeOut(1500);
-		},800);
+			$("#contenedor").fadeOut(1000);
+		},100);
 	});
 
 }
@@ -30,14 +30,14 @@ function salir_menu(){
 
 	$(document).ready(function() {
 		setTimeout(function() {
-			$("#ver_menu").fadeOut(1500);
-		},1000);
+			$("#ver_menu").fadeOut(1000);
+		},100);
 	});
 
 	$(document).ready(function() {
 		setTimeout(function() {
-			$("#contenedor").fadeIn(1500);
-		},800);
+			$("#contenedor").fadeIn(1000);
+		},100);
 	});
 
 }
