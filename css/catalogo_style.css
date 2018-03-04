@@ -10,10 +10,6 @@ main{
 	width: 80%;
 	margin: 0 auto;
 }
-main div.productos img{
-	margin-top: 150px;
-	width: 100%;
-}
 /******************* Img Menu *********************/
 header img.logo{
 	width: 300px;
@@ -49,6 +45,56 @@ img.logo{
 	  }
 	}
 
+}
+/***************** Buscador ***********************/
+form.buscador{
+	text-align: center;
+	padding-top: 150px;
+	padding-bottom: 50px;
+}
+form.buscador input{
+	border-radius: 5px;
+	text-align: center;
+	border: 1px solid #BDBDBD;
+	padding: 5px;
+	width: 250px;
+}
+form.buscador label{
+	color: #BDBDBD;
+	font-size: 25px;
+}
+/***************** Menu Novedades *****************/
+nav.menu_novidades{
+	width: 80%;
+	margin: 0 auto;
+	margin-bottom: 100px;
+}
+nav.menu_novidades ul{
+	width: 100%;
+}
+nav.menu_novidades ul li a{
+	display: block;
+	text-decoration: none;
+	color: black;
+	font-size: 20px;
+	width: 100%;
+}
+nav.menu_novidades ul li a:hover{
+	background-color: #BDBDBD;
+}
+nav.menu_novidades ul li{
+	cursor: pointer;
+	width: 32%;
+	list-style: none;
+	text-align: center;
+	float: left;
+	border: 1px solid #BDBDBD;;
+}
+@media screen and (max-width: 600px){
+	nav.menu_novidades ul li{
+		float: none;
+		width: 100%;
+	}
 }
 /***************** Menu ***************************/
 #menu{
@@ -91,6 +137,9 @@ img.logo{
 }
 #ver_menu img{
 	width: 500px;
+}
+#ver_menu ul ul{
+	display: none;
 }
 #ver_menu a, #ver_menu p{
 	color: purple;
@@ -139,3 +188,38 @@ img#cerrar_menu:hover{
 	list-style: none;
 }
 /* Catalogo */
+main{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+main div.productos{
+	position: relative;
+	width: 250px;
+	height: 400px;
+	border: 1px solid black;
+	box-shadow: 5px 10px #888888;
+	margin-bottom: 20px;
+	text-align: center;
+}
+main div.productos img{
+	width: 80%;
+	margin: 20px 10% 10px 10%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+main div.productos span.texto{
+	text-align: left;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	margin: 0 0 10px 10%;
+}
+main div.productos img.segunda_foto{
+	z-index: 90;
+}
+main div.productos img.primera_foto{
+	z-index: 100;
+}
