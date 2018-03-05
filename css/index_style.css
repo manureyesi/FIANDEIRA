@@ -56,7 +56,9 @@ div#info_tenda span:hover{
 	-webkit-transform: scale(1.2,1.2) rotate(-5deg);
 	-o-transform: scale(1.2,1.2) rotate(-5deg);
 	transition: all 1s;
-
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;
+	-o-transition: all 1s;
 }
 div#info_tenda span a{
 	padding-top: 15px;
@@ -77,6 +79,13 @@ div#info_tenda span a{
 }
 
 /* Muestra */
+h1.feito{
+	padding-top: 20px;
+	color: #800080;
+	text-align: center;
+	font-size: 40px;
+	font-weight: bold;
+}
 div#muestra{
 	width: 80%;
 	margin: 30px auto;
@@ -92,8 +101,11 @@ div.ejemplos img{
 	width: 100%;
 }
 div.ejemplos img:hover{
-    filter: grayscale(100%);
-	-webkit-filter: grayscale(100%);
+	transition: all 1s;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;
+	-o-transition: all 1s;
+    filter: grayscale(100%) blur(1px);
 }
 
 /* Texto */
@@ -102,6 +114,7 @@ div.ejemplos div.texto{
 	color: white;
 	width: 100%;
 	position: absolute;
+	padding-bottom: 5px;
 	bottom: 3px;
 }
 div.ejemplos div.texto h1{
