@@ -81,15 +81,17 @@ img.logo{
 #ver_menu img{
 	width: 500px;
 }
-#ver_menu a{
-	text-decoration: none;
+#ver_menu li{
+	list-style: none;
+}
+#ver_menu a, #ver_menu p{
 	color: purple;
+	text-decoration: none;
+	font-size: 40px;
+	cursor: pointer;
 }
-#ver_menu a:hover{
+#ver_menu a:hover, #ver_menu p:hover{
 	color: grey;
-}
-#ver_menu h2{
-	margin-top: 30px;
 }
 img#cerrar_menu{
 	position: absolute;
@@ -122,7 +124,7 @@ img#cerrar_menu:hover{
 		width: 30px;
 	}
 	#menu img.logo{
-		padding-top: 10px;
+		padding-top: 20px;
 		width: 200px;
 	}
 	@keyframes deslizaFoto {

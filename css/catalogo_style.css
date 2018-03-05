@@ -33,6 +33,7 @@ img.logo{
 @media screen and (max-width: 600px){
 
 	header img.logo{
+		padding-top: 20px;
 		width: 200px;
 	}
 	@keyframes deslizaFoto {
@@ -93,7 +94,7 @@ nav.menu_novidades ul li{
 @media screen and (max-width: 600px){
 	nav.menu_novidades ul li{
 		float: none;
-		width: 100%;
+		width: 100%
 	}
 }
 /***************** Menu ***************************/
