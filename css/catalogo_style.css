@@ -89,7 +89,7 @@ nav.menu_novidades ul li{
 	list-style: none;
 	text-align: center;
 	float: left;
-	border: 1px solid #BDBDBD;;
+	border: 1px solid #BDBDBD;
 }
 @media screen and (max-width: 600px){
 	nav.menu_novidades ul li{
@@ -102,7 +102,7 @@ nav.menu_novidades ul li{
 	background: rgba(0,0,0,0.5);
 	width: 100%;
 	position: fixed;
-	z-index: 100;
+	z-index: 999;
 	height: 90px;
 }
 #menu #bars_menu{
@@ -200,8 +200,8 @@ main div.productos{
 	height: 400px;
 	border: 1px solid black;
 	box-shadow: 5px 10px #888888;
-	margin-bottom: 20px;
 	text-align: center;
+	margin: 0 20px 30px 20px;
 }
 main div.productos img{
 	width: 80%;
@@ -218,9 +218,25 @@ main div.productos span.texto{
 	width: 100%;
 	margin: 0 0 10px 10%;
 }
+main div.productos span.texto h1{
+	font-size: 20px;
+}
 main div.productos img.segunda_foto{
+	opacity: 1;
 	z-index: 90;
 }
-main div.productos img.primera_foto{
+main div.productos img.primeira_foto{
+	opacity: 1;
 	z-index: 100;
+}
+/* Paginador */
+div.paginador{
+	text-align: center;
+	margin-bottom: 10px;
+}
+div.paginador a{
+	text-decoration: none;
+	color: #BDBDBD;
+	font-size: 20px;
+	padding: 5px;
 }

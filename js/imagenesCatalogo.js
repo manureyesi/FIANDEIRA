@@ -1,6 +1,7 @@
-window.addEventListener('load', inicio, true);
-
-function inicio(){
-
-    // $(".segunda_foto").css( "z-index", "80" );
-}
+$(document).ready(function() {
+    $('.desaparece').hover(function(){
+        $(this).animate({opacity:0});
+    },function(){
+        $(this).animate({opacity:1});
+    });
+});
