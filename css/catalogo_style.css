@@ -48,21 +48,24 @@ img.logo{
 
 }
 /***************** Buscador ***********************/
-form.buscador{
+.buscador{
 	text-align: center;
 	padding-top: 150px;
 	padding-bottom: 50px;
 }
-form.buscador input{
+.buscador input{
 	border-radius: 5px;
 	text-align: center;
 	border: 1px solid #BDBDBD;
 	padding: 5px;
 	width: 250px;
 }
-form.buscador label{
+.buscador label{
 	color: #BDBDBD;
 	font-size: 25px;
+}
+.buscador input[type=submit]{
+	display: none;
 }
 /***************** Menu Novedades *****************/
 nav.menu_novidades{
@@ -196,8 +199,8 @@ main{
 }
 main div.productos{
 	position: relative;
-	width: 250px;
-	height: 400px;
+	width: 300px;
+	height: 450px;
 	border: 1px solid black;
 	box-shadow: 5px 10px #888888;
 	text-align: center;
@@ -210,15 +213,16 @@ main div.productos img{
 	top: 0;
 	left: 0;
 }
-main div.productos span.texto{
+main div.productos div.texto{
 	text-align: left;
 	position: absolute;
 	bottom: 0;
 	left: 0;
 	width: 100%;
 	margin: 0 0 10px 10%;
+	color: #800080;
 }
-main div.productos span.texto h1{
+main div.productos div.texto h1{
 	font-size: 20px;
 }
 main div.productos img.segunda_foto{

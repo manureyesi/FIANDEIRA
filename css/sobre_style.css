@@ -61,16 +61,14 @@ section video{
 	main section{
 		position: relative;
 	}
-	main section img#foto_sobrenos{
-		width: 40%;
-		margin-bottom: 110px;
+	main section.testo_descripcion{
+		height: 340px;
 	}
-	main section p{
-		padding-top: 30px;
-		width: 50%;
-		position: absolute;
-		top: 0;
-		right: 0;
+	main section.testo_descripcion img#foto_sobrenos{
+		width: 40%;
+		float: left;
+		padding-right: 20px;
+		margin: 0;
 	}
 	main section.marcas{
 		display: flex;
@@ -94,18 +92,19 @@ section video{
 	}
 
 }
-@media screen and (min-width: 950px){
-
-	main section img#foto_sobrenos{
-		margin-bottom: 50px;
-	}
-
-}
 @media screen and (min-width: 1250px){
+	/* Texto Sobre nos */
+
+	main section.testo_descripcion{
+		height: 280px;
+	}
+	main section.testo_descripcion img#foto_sobrenos{
+		width: 456px;
+	}
 
 	/* Flex de Marcas */
 	main section.marcas{
-		flex-wrap: no-wrap;
+		flex-wrap: nowrap;
 	}
 	main .marcas div.marcas{
 		width: 22%;
